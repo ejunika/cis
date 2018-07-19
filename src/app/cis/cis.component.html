@@ -1,0 +1,303 @@
+<div id="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" bgGray>
+        <a class="navbar-brand" href="cis#banner">
+            <img src="assets/imgs/logo.png" alt="CIS DIGITAL" title="CIS DIGITAL">
+        </a>
+        <span></span>
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="cis#plansSec">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cis#offersSec">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cis#supportSec">Support</a>
+                </li>
+                <li class="nav-item hdr_formItem">
+                    <form class="form-inline hdr_searchForm">
+                        <input class="form-control mr-sm-2" type="text" placeholder="What are you looking for?">
+                        <button class="btn my-sm-0 hdr_searchIcon" type="button"></button>
+                    </form>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="customerLogo">
+                <img src="assets/imgs/customerLogo.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <section class="banner" id="banner">
+        <div class="bannerContent">
+            <div id="banner_slider" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>Self care is the best care 1</h3>
+                        <p>Your single window for all Services, Products and a lot more...</p>
+                        <p>CIS Digital Application gives the Power in your hands to decide to way to your Digital Life.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Self care is the best care 2</h3>
+                        <p>Your single window for all Services, Products and a lot more...</p>
+                        <p>CIS Digital Application gives the Power in your hands to decide to way to your Digital Life.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Self care is the best care 3</h3>
+                        <p>Your single window for all Services, Products and a lot more...</p>
+                        <p>CIS Digital Application gives the Power in your hands to decide to way to your Digital Life.</p>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#banner_slider" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#banner_slider" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <!-- <div class="banner_barcode">
+                 <p class="text-uppercase"><strong>Become a customer</strong></p>
+                 <img class="img-fluid" src="assets/imgs/barcode.png" alt="">
+                 </div> -->
+            <div id="phone">
+                <img src="assets/imgs/phone.png" />
+            </div>
+        </div>
+    </section>
+    <section class="loginSec container-fluid" bgGray>
+        <div class="row">
+            <div class="col-lg-6 loginSec_loginCol">
+                <form class="form-inline">
+                    <div class="form-group loginSec_login">
+                        <label for="loginName" class="sr-only">Login Name</label>
+                        <input [(ngModel)]="loginName" bxShadow type="text" class="form-control" name="loginName" id="loginName" placeholder="Login Name">
+                        <a href="javascript:void(0)">Forgot Password</a>
+                    </div>
+                    <div class="form-group loginSec_password">
+                        <label for="loginName" class="sr-only">Password</label>
+                        <input [(ngModel)]="password" bxShadow type="password" class="form-control" name="Password" id="Password" placeholder="Password">
+                        <a href="javascript:void(0)">Register Now</a>
+                    </div>
+                    <button (click)="doLogin()" type="button" class="btn btn-sm btn-light btnLogin" textNavy>Login</button>
+                    <div class="form-group loginSec_socialLink">
+                        <a href="javascript:void(0)" class="socialIcon fbIcon"></a>
+                        <a href="javascript:void(0)" class="socialIcon googleIcon"></a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 loginSec_rechargeCol">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="phone" class="sr-only">Phone</label>
+                        <input bxShadow type="tel" class="form-control" name="phone" id="phone" placeholder="+46 123 123 123">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount" class="sr-only">Amount</label>
+                        <input bxShadow type="text" class="form-control" name="amount" id="amount" placeholder="Amount">
+                    </div>
+                    <button type="button" class="btn btn-sm" bgNavy>Quick Recharge</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="plansSec" id="plansSec">
+        <div class="container">
+            <h2 class="blockTitle text-uppercase text-center">Plans</h2>
+            <p class="text-center">CIS application suite is a combination of self-care mobile application as well web portal.</p>
+            <div class="row plansBoxes">
+                <div class="col-md-4 plansBox plansBoxStandard">
+                    <div class="plansBoxInner" bgGray>
+                        <div class="plansBoxHeader">
+                            <h3 class="text-uppercase plansBoxTitle" bgBlue>Standard</h3>
+                        </div>
+                        <div class="plansBoxBody">
+                            <div class="plansBoxPrice">
+                                <span class="plansBoxPriceText">5.99 $</span>
+                                <span class="plansBoxPriceText2">/mo</span>
+                            </div>
+                            <div class="list-group text-center">
+                                <div class="list-group-item">GB 10</div>
+                                <div class="list-group-item">Minutes 1000</div>
+                                <div class="list-group-item">SMS 1000</div>
+                                <div class="list-group-item">
+                                    <s>Roaming</s>
+                                </div>
+                                <div class="list-group-item">
+                                    <s>Music</s>
+                                </div>
+                                <div class="list-group-item">
+                                    <s>Video</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plansBoxFooter">
+                            <button class="btn btn-block" bgBlue>Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 plansBox plansBoxPremium">
+                    <div class="plansBoxInner" bgGray>
+                        <div class="plansBoxHeader">
+                            <h3 class="text-uppercase plansBoxTitle" bgBlue>Premium</h3>
+                        </div>
+                        <div class="plansBoxBody">
+                            <div class="plansBoxPrice">
+                                <span class="plansBoxPriceText">10.99 $</span>
+                                <span class="plansBoxPriceText2">/mo</span>
+                            </div>
+                            <div class="list-group text-center">
+                                <div class="list-group-item">GB 50</div>
+                                <div class="list-group-item">Unlimited Minutes</div>
+                                <div class="list-group-item"> Unlimited SMS </div>
+                                <div class="list-group-item"> Roaming </div>
+                                <div class="list-group-item"> Music </div>
+                                <div class="list-group-item"> Video </div>
+                            </div>
+                        </div>
+                        <div class="plansBoxFooter">
+                            <button class="btn btn-block" bgBlue>Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 plansBox plansBoxCustom">
+                    <div class="plansBoxInner" bgGray>
+                        <div class="plansBoxHeader">
+                            <h3 class="text-uppercase plansBoxTitle" bgBlue>Custom</h3>
+                        </div>
+                        <div class="plansBoxBody">
+                            <div class="plansBoxPrice">
+                                <span class="plansBoxPriceText">02.50 $</span>
+                                <span class="plansBoxPriceText2">/mo</span>
+                            </div>
+                            <div class="plansCustom_dataSlides">
+                                <div class="plansCustom_dataSlides_slider plansCustom_dataSlides_sliderData">
+                                    <div class="plansCustom_dataSlides_sliderTitle">Data(Gb)</div>
+                                    <!--     <div class="plansCustom_dataSlides_sliderInner">
+                                   <div class="plansCustom_dataSlides_sliderItem">10</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">20</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">30</div>
+                                   </div>
+                                   <button name="prev"></button>
+                                   <button name="next"></button>-->
+                                </div>
+                                <div class="ribbon">
+                                    <div class="flex-container">
+                                        <div class="numberDivCont">0</div>
+                                        <div class="numberDivCont">5</div>
+                                        <div class="numberDivCont active">10</div>
+                                        <div class="numberDivCont">50</div>
+                                        <div class="numberDivCont">80</div>
+                                        <div class="numberDivCont">100</div>
+                                    </div>
+                                </div>
+                                <div class="plansCustom_dataSlides_slider plansCustom_dataSlides_sliderSms">
+                                    <div class="plansCustom_dataSlides_sliderTitle">SMS</div>
+                                    <!-- <div class="plansCustom_dataSlides_sliderInner">
+                                   <div class="plansCustom_dataSlides_sliderItem">00</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">10</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">20</div>
+                                   </div>
+                                   <button name="prev"></button>
+                                   <button name="next"></button>-->
+                                </div>
+                                <div class="ribbon">
+                                    <div class="flex-container">
+                                        <div class="numberDivCont">0</div>
+                                        <div class="numberDivCont">5</div>
+                                        <div class="numberDivCont ">10</div>
+                                        <div class="numberDivCont active">50</div>
+                                        <div class="numberDivCont">80</div>
+                                        <div class="numberDivCont">100</div>
+                                    </div>
+                                </div>
+                                <div class="plansCustom_dataSlides_slider plansCustom_dataSlides_sliderMinutes">
+                                    <div class="plansCustom_dataSlides_sliderTitle">Minutes</div>
+                                    <!--<div class="plansCustom_dataSlides_sliderInner">
+                                   <div class="plansCustom_dataSlides_sliderItem">100</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">150</div>
+                                   <div class="plansCustom_dataSlides_sliderItem">200</div>
+                                   </div>
+                                   <button name="prev"></button>
+                                   <button name="next"></button>-->
+                                </div>
+                                <div class="ribbon">
+                                    <div class="flex-container">
+                                        <div class="numberDivCont">0</div>
+                                        <div class="numberDivCont active">5</div>
+                                        <div class="numberDivCont ">10</div>
+                                        <div class="numberDivCont ">50</div>
+                                        <div class="numberDivCont">80</div>
+                                        <div class="numberDivCont ">100</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plansBoxFooter">
+                            <button class="btn btn-block" bgBlue>Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offersSec" id="offersSec">
+        <div class="container">
+            <h2 class="blockTitle text-uppercase text-center">Offers</h2>
+            <p class="text-center">
+                CIS application suite is a combination of self-care mobile application as well web portal. The mobile application basically
+                targets the operator customers and gives them detail of the services used by them. The web portal would have
+                the same features as mobile application and user can avail facilities of the self-care application.
+            </p>
+            <div class="offersSec_banner text-center">
+                <img class="img-fluid" src="assets/imgs/offersBanner.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="supportSec" id="supportSec" bgNavy>
+        <div class="container">
+            <div class="supportSecDes text-center">
+                Do you have any questions?
+                <br> We are happy to hear from you.
+            </div>
+            <div class="row supportSec_contact">
+                <div class="col-sm-7">
+                    <div class="supportSec_item supportSec_mail">
+                        <a href="mailto:info@cisdigital" target="_top">info@cisdigital</a>
+                    </div>
+                    <div class="supportSec_item supportSec_tel">+46 104 632 525</div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="supportSec_item supportSec_locate">Locate us</div>
+                    <div class="supportSec_item supportSec_talk">Talk to us !</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container-fluid navbar-light navbar-expand-sm">
+        <div class="row">
+            <div class="col-md-4">
+                <span>&copy; Ericsson AB 2018</span>
+            </div>
+            <div class="col-md-8">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Licence Agreement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Modern Slavery Statement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Cookies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>

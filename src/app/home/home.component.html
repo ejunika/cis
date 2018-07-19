@@ -1,0 +1,621 @@
+<div id="header">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/imgs/logo_home.png" alt="logo" />
+      </a>
+    </div>
+    <div class="call_us">
+      <h5>Talk to Expert :
+        <span>+46 123 123 123</span>
+      </h5>
+      <div class="notification_bar">
+        <img src="assets/imgs/notification.png" alt="notification" />
+        <img src="assets/imgs/icon-3.png" alt="download-icon" />
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="all_detail">
+  <div class="wrapper">
+    <div class="box-1">
+      <a routerLink="/home/profile">
+        <img src="assets/imgs/icon-5.png" alt="Profile" />
+      </a>
+      <h4>
+        <a routerLink="/home/profile">My Profile</a>
+      </h4>
+    </div>
+    <div class="box-1">
+      <a routerLink="plan">
+        <img src="assets/imgs/icon-4.png" alt="My Plan" />
+      </a>
+      <h4>
+        <a routerLink="plan">My Plan</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="box-1">
+      <a routerLink="/home/utc">
+        <img src="assets/imgs/icon-6.png" alt="Traffic" />
+      </a>
+      <h4>
+        <a routerLink="/home/utc">Usage Traffic & Costs</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="box-1">
+      <a routerLink="/home/dfy">
+        <img src="assets/imgs/icon-7.png" alt="Deals" />
+      </a>
+      <h4>
+        <a routerLink="/home/dfy">Deals for You</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="box-1">
+      <a routerLink="/home/roaming">
+        <img src="assets/imgs/icon-8.png" alt="Roaming" />
+      </a>
+      <h4>
+        <a routerLink="/home/roaming">Roaming</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="box-1">
+      <a routerLink="/home/wallet">
+        <img src="assets/imgs/icon-9.png" alt="Wallet" />
+      </a>
+      <h4>
+        <a routerLink="/home/wallet">Wallet & Payment</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="box-1">
+      <a routerLink="/home/support">
+        <img src="assets/imgs/icon-10.png" alt="Support" />
+      </a>
+      <h4>
+        <a routerLink="/home/support">Support</a>
+      </h4>
+      <div class="down-arrow">
+        <img src="assets/imgs/down-arrow-1.png" alt="" />
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="container_section">
+  <div class="container_wrapper">
+    <div class="container_header">
+      <div class="inner-wrapper">
+        <div class="menu_bar">
+          <h1>Welcome to CIS Digital</h1>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="login_person">
+          <h2>Nilanjana Basu</h2>
+          <h5>
+            <img src="assets/imgs/online-icon.png" alt="online" />+46 123 123 123
+            <img src="assets/imgs/down-arrow.png" alt="arrow" />
+          </h5>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="inner-wrapper">
+      <div class="plans row">
+        <div class="col-md-3">
+          <div class="plan-box">
+            <h3>Credit Balance</h3>
+            <div class="inner-icon">
+              <img data-toggle="modal" data-target="#addCredit" src="assets/imgs/icon-20.jpg" alt="img" />
+            </div>
+            <ul>
+              <li>$50.
+                <small>55</small>
+              </li>
+              <li>
+                <a data-toggle="modal" data-target="#creditTranser">
+                  <img src="assets/imgs/icon-11.png" alt="img" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div (click)="makePlanboxActive('DATA')"
+            [ngClass]="{'plan-box-selected': isDataPlanboxSelected}"
+            class="plan-box-2">
+            <div class="plan-left">
+              <img src="assets/imgs/glass-1.png" alt="img" />
+            </div>
+            <div class="plan-right">
+              <h3>200
+                <br>
+                <small>GB</small>
+              </h3>
+              <h4>76 GB</h4>
+              <ul>
+                <li>Data</li>
+                <li>
+                  <a data-toggle="modal" data-target="#addData">
+                    <img src="assets/imgs/icon-12.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#dataTransfer">
+                    <img src="assets/imgs/icon-11.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#shareData">
+                    <img src="assets/imgs/icon-13.png" alt="img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div (click)="makePlanboxActive('MINUTES')"
+            [ngClass]="{'plan-box-selected': isMinutesPlanboxSelected}"
+            class="plan-box-2 plan-box-3">
+            <div class="plan-left">
+              <img src="assets/imgs/glass-2.png" alt="img" />
+            </div>
+            <div class="plan-right">
+              <h3>Unlimited</h3>
+              <h4>Unlimited</h4>
+              <ul>
+                <li>Minutes</li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-12.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-11.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-13.png" alt="img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div (click)="makePlanboxActive('SMS')"
+            [ngClass]="{'plan-box-selected': isSmsPlanboxSelected}"
+            class="plan-box-2 plan-box-4">
+            <div class="plan-left">
+              <img src="assets/imgs/glass-2.png" alt="img" />
+            </div>
+            <div class="plan-right">
+              <h3>Unlimited</h3>
+              <h4>Unlimited</h4>
+              <ul>
+                <li>SMS</li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-12.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-11.png" alt="img" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/imgs/icon-13.png" alt="img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="current-usage">
+        <h3>Current Usage</h3>
+        <!-- <img src="assets/imgs/graph-img.jpg" alt="graph" /> -->
+        <div class="card accordion rounded-0 border-0">
+          <div class="card-body">
+            <canvas #chartCanvas>{{ chart }}</canvas>
+          </div>
+        </div>
+      </div>
+      <div class="add-ons">
+        <h3>Add Ons</h3>
+        <!-- <div class="accordion">
+          <ul>
+            <li>10GB Expiring in 30 Days</li>
+            <li>Roaming Data 10 GB</li>
+            <li>Roaming Data10 GB + 1000 mins +1000 SMS</li>
+            <li>Roaming Data10 GB + 1000 mins +1000 SMS</li>
+          </ul>
+        </div> -->
+        <div class="card accordion rounded-0 border-0">
+          <div class="card-body">
+            <ul class="list-group rounded-0 border-0">
+              <li (click)="selectAddOn(addOn)"
+                [ngClass]="{'selected': addOn.isSelected}"
+                *ngFor="let addOn of addOns"
+                class="list-group-item">
+                {{addOn.details}}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  10GB Expiring in 30 Days
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Roaming Data 10 GB
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Roaming Data10 GB + 1000 mins +1000 SMS
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Roaming Data10 GB + 1000 mins +1000 SMS
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="container-bottom">
+      <div class="bootom-left">
+        <img src="assets/imgs/text-img.png" alt="text" />
+        <h3>
+          <strong>1</strong>
+          <small>houre</small> of
+          <span>Unlimited Data</span>
+        </h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="bootom-right">
+        <img src="assets/imgs/bottom-right-img.png" alt="img" />
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer_section">
+  <div class="footer-wrapper">
+    <div class="footer-menu">
+      <ul>
+        <li>
+          <a href="#">My Plans</a>
+        </li>
+        <li>
+          <a href="#">Add SIM</a>
+        </li>
+        <li>
+          <a href="#">Credit Transfer</a>
+        </li>
+        <li>
+          <a href="#">Share Account</a>
+        </li>
+        <li>
+          <a href="#">Friends and Family</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <li>
+          <a href="#">Recharge for Other</a>
+        </li>
+        <li>
+          <a href="#">Billing History</a>
+        </li>
+        <li>
+          <a href="#">Deals for you</a>
+        </li>
+        <li>
+          <a href="#">Roaming</a>
+        </li>
+        <li>
+          <a href="#">Find a Store</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-menu last-menu">
+      <ul>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Call Center</a>
+        </li>
+        <li>
+          <a href="#">Service Request Status</a>
+        </li>
+        <li>
+          <a href="#">Chatbot / Chat</a>
+        </li>
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="social-bar-content">
+      <div class="social-bar">
+        <a href="#">
+          <img src="assets/imgs/fb-icon.png" alt="facbook" /> </a>
+        <a href="#">
+          <img src="assets/imgs/gmail-icon.png" alt="gmail" /> </a>
+        <a href="#">
+          <img src="assets/imgs/in-icon.png" alt="facbook" /> </a>
+      </div>
+      <div class="chat-option">
+        <img src="assets/imgs/msg-icon.png" alt="chat-img" />
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="footer-wrapper">
+    <h5>©Ericsson AB 2018</h5>
+    <ul>
+      <li>
+        <a href="#">Licence Agreement</a>
+      </li>
+      <li>
+        <a href="#">Modern Slavery Statement</a>
+      </li>
+      <li>
+        <a href="#">Cookies</a>
+      </li>
+      <li>
+        <a href="#">Legal</a>
+      </li>
+    </ul>
+    <div class="clr"></div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="addCredit" tabindex="-1" role="dialog" aria-labelledby="addCreditLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body popup-box">
+        <div class="">
+          <h3>Add Credit</h3>
+          <div class="credit_input">
+            <h4>MSISDN No.</h4>
+            <input type="text" name="Mobile number" placeholder="+46 123 123 123">
+            <input type="text" name="Mobile number" placeholder="Enter Amount">
+          </div>
+          <div class="all-price">
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 10.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 20.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 50.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 100.00</a>
+              </h4>
+            </div>
+            <div class="clr"></div>
+            <button data-dismiss="modal" class="price-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="creditTranser" tabindex="-1" role="dialog" aria-labelledby="creditTranserLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body popup-box">
+        <div class="">
+          <h3>Credit Transfer</h3>
+          <div class="credit-transfer">
+            <h4>MSISDN No.</h4>
+            <input type="text" name="Mobile number" placeholder="+46 123 123 123">
+          </div>
+          <div class="price-range">
+            <div class="value-box">$ 00.00</div>
+            <div class="value-box-2">$ 50.55</div>
+            <img src="images/Credit_transfer.png" alt="price-range" />
+            <div class="clr"></div>
+            <input type="text" name="Mobile number" placeholder="$ 00.00">
+            <div class="transfer-btn-section">
+              <button data-dismiss="modal" class="transfer-btn">Transfer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="dataTransfer" tabindex="-1" role="dialog" aria-labelledby="dataTransferLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body popup-box">
+        <div class="">
+          <h3>Data Transfer</h3>
+          <div class="credit-transfer">
+            <h4>MSISDN No.</h4>
+            <input type="text" name="Mobile number" placeholder="+46 123 123 123">
+          </div>
+          <div class="price-range">
+            <div class="value-box">$ 00.00</div>
+            <div class="value-box-2">$ 50.55</div>
+            <img src="images/Credit_transfer.png" alt="price-range" />
+            <div class="clr"></div>
+            <input type="text" name="Mobile number" placeholder="$ 00.00">
+            <div class="transfer-btn-section">
+              <button data-dismiss="modal" class="transfer-btn">Transfer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="addData" tabindex="-1" role="dialog" aria-labelledby="addDataLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body popup-box">
+        <div class="">
+          <h3>Add Credit</h3>
+          <div class="credit_input">
+            <h4>MSISDN No.</h4>
+            <input type="text" name="Mobile number" placeholder="+46 123 123 123">
+            <input type="text" name="Mobile number" placeholder="Enter Amount">
+          </div>
+          <div class="all-price">
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 10.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 20.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 50.00</a>
+              </h4>
+            </div>
+            <div class="price-box">
+              <h4>
+                <a href="#">+ $ 100.00</a>
+              </h4>
+            </div>
+            <div class="clr"></div>
+            <button data-dismiss="modal" class="price-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="shareData" tabindex="-1" role="dialog" aria-labelledby="shareDataLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body popup-box">
+        <div class="">
+          <h3>Share Data</h3>
+          <div class="credit-transfer">
+            <h4>MSISDN No.</h4>
+            <input type="text" name="Mobile number" placeholder="+46 123 123 123">
+          </div>
+          <div class="price-range">
+            <div class="value-box">$ 00.00</div>
+            <div class="value-box-2">$ 50.55</div>
+            <img src="images/Credit_transfer.png" alt="price-range" />
+            <div class="clr"></div>
+            <input type="text" name="Mobile number" placeholder="$ 00.00">
+            <div class="transfer-btn-section">
+              <button data-dismiss="modal" class="transfer-btn">Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
